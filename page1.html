@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: right;
+  padding: 24px 28px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: white;
+}
+</style>
+<script type="text/javascript">
+	function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "inline";
+    }
+}
+</script>
+<link rel="stylesheet" type="text/css" href="./css/page1.css">
+</head>
+<body>
+
+<ul>
+  <li> <b><a  class=" pointer" href="#pointer">Pointer</a><b></li>
+  <li ><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">About us</a></li>
+  <li><a href="#about">contact</a></li>
+  <li><a href="#about">sign up</a></li>
+  <li><a href="#about">login</a></li>
+  <div class="container">
+  <img class="img" src="./images/img1.jpeg" alt="wrong" height="400" width="1000"> 
+  <div class="centered"><b>We are the best <br /> consultancy agency</b></div>
+  <div class="center">Lorem ipsum sit amet constecter adipising elite lamboreum <br /> asseumda ea qua cultopate fuga officia</div>
+  <div><button class="button" type="button" onclick="alert('Hello world!')">getstarted</button></div>
+</div>
+</ul>
+
+<br>
+<br>
+<br>
+<section id="about">
+      <div class="container1">
+        <div class="mySlides"><img src="./images/pic1.jpeg" width="70%" height="300px"></div>
+        <div class="mySlides"><img src="./images/pic2.webp" width="70%" height="300px"></div>
+        <div class="mySlides"><img src="./images/pic3.jpg" width="70%" height="300px"></div>
+        <div class="text-block">
+          <h2>Read More Read Less Button</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</span></p>
+          <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+      <script src="page1.js"></script>
+    </section>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<div>
+<h1  style="color:red";>Our dedicated <br />professionals</h1>
+<p>Lorem ipsum dolor sit amet, consectetur <br />
+	ipsum dolor sit amet, consectetur sint occaecat   </p>
+<div class= "container2">
+  <div>
+	<img class="img1"  src="./images/img4.webp" alt="wrong" height="200" width="200">
+  <p>bacbaskmc n</p>
+</div>
+<div>
+	<img class="img2"  src="./images/img5.webp" alt="wrong" height="200" width="200">
+  <p>bsfjvbsdmv</p>
+</div>
+<div>
+	<img class="img3"  src="./images/img6.webp" alt="wrong" height="200" width="200">
+  <p>nskdhfvkds,</p>
+</div>
+<div>
+	<img class="img1" src="./images/img7.jpeg" alt="wrong" height="200" width="200">
+  <p>nsjnvnsdnv</p>
+</div>
+<div>
+  <img class="img1"  src="./images/img8.jpeg" alt="wrong" height="200" width="200">
+  <p>bacbaskmc n</p>
+</div>
+<div>
+  <img class="img2"  src="./images/img9.jpeg" alt="wrong" height="200" width="200">
+  <p>bsfjvbsdmv</p>
+</div>
+<div>
+  <img class="img3"  src="./images/img10.jpg" alt="wrong" height="200" width="200">
+  <p>nskdhfvkds,</p>
+</div>
+<div>
+  <img class="img1" src="./images/img11.jpeg" alt="wrong" height="200" width="200">
+  <p>nsjnvnsdnv</p>
+</div>
+</div>
+
+ 
+
+
+
+
+</body>
+</html>
+
