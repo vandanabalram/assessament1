@@ -1,133 +1,180 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: white;
-}
+	<html>
+	<head>
+		<title>page</title>
+		<link rel="stylesheet" type="text/css" href="./css/page1.css">
+		<script >
+			addEventListener("load",() => {
+       		var index = 0;
+        	const slides = document.querySelectorAll(".slides");
+       		const classHide = "slides-hidden", count = slides.length;
+        	nextSlide();
+        	function nextSlide() {
+            slides[(index ++) % count].classList.add(classHide);
+            slides[index % count].classList.remove(classHide);
+            setTimeout(nextSlide, 1000);
+       		 }
+   			 });
+   		 function myFunction() {
+		  var dots = document.getElementById("dots");
+		  var moreText = document.getElementById("more");
+		  var btnText = document.getElementById("myBtn");
 
-li {
-  float: left;
-}
+		  if (dots.style.display === "none") {
+		    dots.style.display = "inline";
+		    btnText.innerHTML = "Read more"; 
+		    moreText.style.display = "none";
+		  } else {
+		    dots.style.display = "none";
+		    btnText.innerHTML = "Read less"; 
+		    moreText.style.display = "inline";
+		  }
+		}
+		</script>
+	</head>
+	<body>
+		<div class="body">
+			<nav class="container">
+				<img class="logo1" src="./images/logo.jpg" alt="logo" / ><label class="point">Pointer.</label>
+				<a href="#home" class="home">Home</a>
+				<a href="#about" class="About">About Us</a>
+				<a href="#team" class="Team">Team</a>
+				<a href="#event" class="Events">Events</a>
+				<a href="#" class="Signin">Sign In</a>
+				<a href="#" class="Login">Log In</a>
+				</nav>
 
-li a {
-  display: block;
-  color: black;
-  text-align: right;
-  padding: 24px 28px;
-  text-decoration: none;
+			<section id = "home">
+			<img src="./images/img1.jpeg" alt="not found" class="h-img">
+			<p>We Are The  Best <br>consulting Services</p>
+			<p class="about">lorem ipsum is a placeholder text commonly used to  </p>
+			<p class="para">demonstrate the visual form of a document .</p>
+			<button class="button1">Get Started</button>
+		</div>
 
-}
+		<section id="about">
+		<div class="second">
 
-li a:hover {
-  background-color: white;
-}
-</style>
-<script type="text/javascript">
-	function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
+			<link rel="stylesheet" type="text/css" href="./css/page2.css">
+	 		<script src="./javascript/home.js"> </script>
 
-    if (dots.style.display === "none") {
-        dots.style.display = "inline";
-        btnText.innerHTML = "Read more";
-        moreText.style.display = "none";
-    } else {
-        dots.style.display = "none";
-        btnText.innerHTML = "Read less";
-        moreText.style.display = "inline";
-    }
-}
-</script>
-<link rel="stylesheet" type="text/css" href="./css/page1.css">
-</head>
-<body>
+	   			<img class="slides slides-hidden" src="./images/img10.jpg">
+	   		</div>
+	   	 	</div>
+	   	 		<img class="slides slides-hidden" src="./images/img11.jpeg">
+	   		</div>
+	   		<div>
+	   			<img class="slides slides-hidden" src="./images/img8.jpeg">
+	   		</div>
+   	<div class="hover">
+   		<h5>create Skills</h5>
+   		<h3>Create your own web masterpiece</h3>
+    	<h6>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+				Lorem Ipsum has<span id="dots">...</span><span id="more"></span>
+				 been the industry's standard dummy text 
+				ever since the 1500s, when an unknown 
+				<span>printer took a galley 
+				of type and scrambled it to make a
+				type specimen book.</span></h6>
+			<button  class="readmore"onclick="myFunction()" id="myBtn">Read more</button>
+		</div>
+	</section>
 
-<ul>
-  <li> <b><a  class=" pointer" href="#pointer">Pointer</a><b></li>
-  <li ><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">About us</a></li>
-  <li><a href="#about">contact</a></li>
-  <li><a href="#about">sign up</a></li>
-  <li><a href="#about">login</a></li>
-  <div class="container">
-  <img class="img" src="./images/img1.jpeg" alt="wrong" height="400" width="1000"> 
-  <div class="centered"><b>We are the best <br /> consultancy agency</b></div>
-  <div class="center">Lorem ipsum sit amet constecter adipising elite lamboreum <br /> asseumda ea qua cultopate fuga officia</div>
-  <div><button class="button" type="button" onclick="alert('Hello world!')">getstarted</button></div>
+		<section id ="team">
+		<div class="third">
+			<link rel="stylesheet" type="text/css" href="./css/page3.css">
+			<div class = "container2">
+				<div><img class="img1" src="./images/img9.jpeg" alt="wrong"></div>
+				<div><img class="img1" src="./images/img8.jpeg" alt="wrong"></div>
+				<div><img class="img1" src="./images/img6.webp" alt="wrong"></div>
+				<div><img class="img1" src="./images/img7.jpeg" alt="wrong"></div>
+				<div class="name1">Mark Zuckerberg<br/>software developer</div>
+				<div class="name1">Bill Gates<br/>software developer</div>
+				<div class="name1">Sergey Brin<br/>software developer</div>
+				<div class="name1">Larry Ellison<br/>software developer</div>
+				<div><img class="img1"src="./images/img10.jpg" alt="wrong"></div>
+				<div><img class="img1" src="./images/img11.jpeg" alt="wrong"></div>
+				<div><img class="img1" src="./images/pic1.jpeg" alt="wrong"></div>
+				<div><img class="img1" src="./images/pic3.jpg" alt="wrong"></div>
+				<div class="name1">Larry Page<br/>software developer</div>
+				<div class="name1">Vint Cerf<br/>software developer</div>
+				<div class="name1">Linus Torvalds<br/>software developer</div>
+				<div class="name1">Ada Lovelace<br/>software developer</div>
+			</div>
+		</div>
+	</section>
+
+
+		<section id ="event">
+		<div class="fourth">
+				<div class=grid1>
+					<div>good evening,<br/>users</div>
+					<div>
+						<p id="demo"></p>
+
+				<script>
+				var d = new Date();
+				document.getElementById("demo").innerHTML = d;
+				</script>
+
+					</div>
+
+
+				</div>
+				<link rel="stylesheet" type="text/css" href="./css/page4.css">
+			<div class="div1">
+				<div class="day">Fri<br/>4<br/>May</div>
+				<img class="img1" src="./images/p1.jpeg" alt="wrong">
+				<p class="pad1">The concept of the cartel party was first proposed in 1992 as a means of drawing attention to the patterns of inter-party collusion or cooperation rather than competition; and as a way of emphasising the influence of the state on party development.</p>
+			</div>
+			<div class="div2">
+				<div class="day">wed<br/>14<br/>Mar</div>
+				<img class="img1" src="./images/p2.jpg" alt="wrong">
+				<p class="pad1">The concept of the cartel party was first proposed in 1992 as a means of drawing attention to the patterns of inter-party collusion or cooperation rather than competition; and as a way of emphasising the influence of the state on party development.</p>
+			</div>
+			<div class="div3">
+				<div class="day">sat<br/>25<br/>Aug</div>
+				<img class="img1" src="./images/p3.jpeg" alt="wrong">
+				<p class="pad1">The concept of the cartel party was first proposed in 1992 as a means of drawing attention to the patterns of inter-party collusion or cooperation rather than competition; and as a way of emphasising the influence of the state on party development.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="form">
+		<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br/><br/>
+    <label for="fname">Email</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">phonenumber</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="fname">street address1</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.."><br/><br/>
+
+    <label for="lname">streetaddress2</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.."><br/><br/>
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
 </div>
-</ul>
-
-<br>
-<br>
-<br>
-<section id="about">
-      <div class="container1">
-        <div class="mySlides"><img src="./images/pic1.jpeg" width="70%" height="300px"></div>
-        <div class="mySlides"><img src="./images/pic2.webp" width="70%" height="300px"></div>
-        <div class="mySlides"><img src="./images/pic3.jpg" width="70%" height="300px"></div>
-        <div class="text-block">
-          <h2>Read More Read Less Button</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa.</span></p>
-          <button onclick="myFunction()" id="myBtn">Read more</button>
-        </div>
-      <script src="page1.js"></script>
-    </section>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<div>
-<h1  style="color:red";>Our dedicated <br />professionals</h1>
-<p>Lorem ipsum dolor sit amet, consectetur <br />
-	ipsum dolor sit amet, consectetur sint occaecat   </p>
-<div class= "container2">
-  <div>
-	<img class="img1"  src="./images/img4.webp" alt="wrong" height="200" width="200">
-  <p>bacbaskmc n</p>
-</div>
-<div>
-	<img class="img2"  src="./images/img5.webp" alt="wrong" height="200" width="200">
-  <p>bsfjvbsdmv</p>
-</div>
-<div>
-	<img class="img3"  src="./images/img6.webp" alt="wrong" height="200" width="200">
-  <p>nskdhfvkds,</p>
-</div>
-<div>
-	<img class="img1" src="./images/img7.jpeg" alt="wrong" height="200" width="200">
-  <p>nsjnvnsdnv</p>
-</div>
-<div>
-  <img class="img1"  src="./images/img8.jpeg" alt="wrong" height="200" width="200">
-  <p>bacbaskmc n</p>
-</div>
-<div>
-  <img class="img2"  src="./images/img9.jpeg" alt="wrong" height="200" width="200">
-  <p>bsfjvbsdmv</p>
-</div>
-<div>
-  <img class="img3"  src="./images/img10.jpg" alt="wrong" height="200" width="200">
-  <p>nskdhfvkds,</p>
-</div>
-<div>
-  <img class="img1" src="./images/img11.jpeg" alt="wrong" height="200" width="200">
-  <p>nsjnvnsdnv</p>
-</div>
-</div>
-
- 
+</section>
 
 
-
-
+			
 </body>
 </html>
 
+	
+			

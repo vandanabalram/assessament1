@@ -1,0 +1,22 @@
+.flexcontainer{
+	display:flex;
+	 flex-wrap: wrap;
+	border:1px solid red;
+	 flex-direction: column;
+
+}
+.a{
+	color:blue;
+	border:1px solid coral;
+	background-color: red;
+}
+.b{
+	color:red;
+	border:1px solid coral;
+	background-color: blue;
+}
+.c{
+	color:green;
+	border:1px solid coral;
+	background-color: pink;
+}
