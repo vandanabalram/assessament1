@@ -1,0 +1,74 @@
+.waste{
+	margin-top: 100px;
+	background-color: #ffffff;
+	height: 40px;
+}
+
+#sign_upwindow{
+		background-color: #96aaab;
+		width: 800px;
+	}
+	#sign_upwindow_heading{
+		border-radius: 15px;
+		border:1px solid blue;
+		color: blue;
+		width: 100px;
+		padding: 5px;
+		margin-left: 50px;
+
+	}
+	#signup_page_data{
+		display: grid;
+		grid-template-columns: 170px 170px 170px 170px;
+		grid-template-rows: 20px 20px 20px 20px 20px 20px 20px 20px 20px 20px;
+		grid-column-gap: 20px;
+		grid-row-gap: 20px;
+		margin-left: 20px;
+	}
+	.signup_page_data_ifn{
+		grid-column: 1/3;
+	}
+	.signup_page_data_isn{
+		grid-column: 3/5
+		margin-bottom10px;
+	}
+	.signup_page_data_sn{
+		grid-column: 3/5;
+	}
+	#signup_page_data_state{
+		grid-column: 3/4;
+	}
+    #padding_input{
+    	padding-right: 100px;
+    	padding-top: 5px;
+
+    }
+    #signup_submit_button{
+    	margin-top: 10px;
+    	padding-left: 20px;
+    	border-radius: 15px;
+    	width: 150px;
+    	height: 35px;
+    	border-color: blue;
+    	background-color: blue;
+    	color: white;
+    }
+    #Already_account{
+    	text-align: center;
+    	color: white;
+    }
+    #signup_login_button{
+    	margin-top: 10px;
+    	border-color: lightgrey;
+    	background-color: lightgrey;
+    	width: 50px;
+    	height: 25px;
+    	border-radius: 10px;
+    	margin-left: 10px;
+    	color: blue;
+    }
+    .frm{
+    	margin-left: 250px;
+    	margin-bottom: 100px;
+    }
+   

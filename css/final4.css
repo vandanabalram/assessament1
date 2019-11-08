@@ -1,0 +1,56 @@
+/*.waste{
+	margin-top: 100px;
+	background-color: #ffffff;
+	height: 40px;
+
+}*/
+.page-start{
+	display: grid;
+	background-color: grey;
+	width: 800px;
+	margin-left: 200px;
+}
+.party-page{
+	display: grid;
+	grid-template-columns: 80px 80px 80px 80px;
+	justify-content: space-between;
+	width: 400px;
+	text-align: center;
+}
+.date{
+	background-color:#red;
+}
+.party{
+	width: 80px;
+	height: 80px;
+}
+.start-p{
+	display: flex;
+	justify-content: space-between;
+	width: 650px;
+	padding-top: 6px;
+	background-color:#fff;
+	margin-left: 50px;
+	padding: 20px;
+}
+.sentance{
+	width: 400px;
+	font-size: 14px;
+	padding-left: 20px;
+}
+.edit{
+	width: 70px;
+	height: 30px;
+	border-radius: 10px;
+	border-color: #458bff;
+	background-color: #85aced;
+}
+.delete{
+	width: 70px;
+	height: 30px;
+	border-radius: 10px;
+	border-color: #458bff;
+	background-color: #85aced;
+	margin-top: 40px;
+	margin-left: -90px;
+}
